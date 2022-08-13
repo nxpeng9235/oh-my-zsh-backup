@@ -1,5 +1,7 @@
 # oh-my-zsh-backup
-Backup of my customized oh-my-zsh configs
+Backup of my customized oh-my-zsh configs. 
+
+The backed-up oh-my-zsh configuration is in ***passion*** theme (with some modification on PROMPT), with plugins of ***shrink-path*** and ***zsh-autosuggestion***. 
 
 ## Install oh-my-zsh
 
