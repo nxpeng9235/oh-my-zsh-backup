@@ -276,6 +276,16 @@ If you have many functions that go well together, you can put them as a `XYZ.plu
 
 If you would like to override the functionality of a plugin distributed with Oh My Zsh, create a plugin of the same name in the `custom/plugins/` directory and it will be loaded instead of the one in `plugins/`.
 
+### Remove directories aliases
+
+If you want to skip ohmyzsh default
+[directories aliases](https://github.com/ohmyzsh/ohmyzsh/blob/master/lib/directories.zsh) you can add the
+following snippet to your `zshrc`, before loading `oh-my-zsh.sh` script:
+
+```zsh
+zstyle ':omz:directories' aliases no
+```
+
 ## Getting Updates
 
 By default, you will be prompted to check for updates every 2 weeks. You can choose other update modes by adding a line to your `~/.zshrc` file, **before Oh My Zsh is loaded**:
@@ -305,6 +315,18 @@ NOTE: you can control how often Oh My Zsh checks for updates with the following 
 zstyle ':omz:update' frequency 7
 # This will check for updates every time you open the terminal (not recommended)
 zstyle ':omz:update' frequency 0
+```
+
+### Updates verbosity
+
+You can also limit the update verbosity with the following settings:
+
+```sh
+zstyle ':omz:update' verbose default # default update prompt
+
+zstyle ':omz:update' verbose minimal # only few lines
+
+zstyle ':omz:update' verbose silent # only errors
 ```
 
 ### Manual Updates
@@ -364,4 +386,4 @@ Oh My Zsh is released under the [MIT license](LICENSE.txt).
 
 ![Planet Argon](https://pa-github-assets.s3.amazonaws.com/PARGON_logo_digital_COL-small.jpg)
 
-Oh My Zsh was started by the team at [Planet Argon](https://www.planetargon.com/?utm_source=github), a [Ruby on Rails development agency](https://www.planetargon.com/skills/ruby-on-rails-development?utm_source=github). Check out our [other open source projects](https://www.planetargon.com/open-source?utm_source=github).
+Oh My Zsh was started by the team at [Planet Argon](https://www.planetargon.com/?utm_source=github), a [Ruby on Rails development agency](http://www.planetargon.com/services/ruby-on-rails-development?utm_source=github). Check out our [other open source projects](https://www.planetargon.com/open-source?utm_source=github).
